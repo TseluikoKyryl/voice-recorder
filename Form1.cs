@@ -13,8 +13,6 @@ using System.Media;
 using System.Drawing.Imaging;
 using System.Drawing;
 using System.IO;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using NAudio.Wave.SampleProviders;
 
 namespace voice_recorder
 {
@@ -23,8 +21,6 @@ namespace voice_recorder
         private string path;
         private readonly SoundPlayer _soundPlayer = new SoundPlayer();
         private string fileName = string.Empty;
-        //private WaveOutEvent outputDevise;
-        //private AudioFileReader audioFile;
         public Form1()
         {
             InitializeComponent();
