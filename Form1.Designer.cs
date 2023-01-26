@@ -36,6 +36,8 @@
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.listView1 = new System.Windows.Forms.ListView();
             this.button4 = new System.Windows.Forms.Button();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.SuspendLayout();
             // 
             // button1
@@ -93,11 +95,15 @@
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.Location = new System.Drawing.Point(12, 144);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(270, 136);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // button4
             // 
@@ -108,6 +114,16 @@
             this.button4.Text = "Refresh Sources";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Name";
+            this.columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Path";
+            this.columnHeader4.Width = 100;
             // 
             // Form1
             // 
@@ -136,5 +152,7 @@
         private ColumnHeader columnHeader2;
         private ListView listView1;
         private Button button4;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
     }
 }
